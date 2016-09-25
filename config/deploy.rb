@@ -3,7 +3,7 @@ lock '3.5.0'
 
 set :user, 'ubuntu'
 set :application, 'fountain'
-set :repo_url, 'https://github.com/dwgeneral/Fountain.git'
+set :repo_url, 'git@github.com:dwgeneral/Fountain.git'
 set :deploy_to, '/opt/fountain/'
 set :linked_files, fetch(:linked_files, []).push("config/*.yml")
 set :linked_dirs, fetch(:linked_dirs, []).push("log", "tmp/pids")
